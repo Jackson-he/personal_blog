@@ -1,7 +1,6 @@
 {
   "name": "blog-web",
   "version": "0.1.0",
-  "homepage" : "https://jackson-he.github.io/personal_blog",
   "private": true,
   "dependencies": {
     "@babel/core": "7.1.0",
@@ -60,7 +59,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "deploy": "npm run build && node scripts/deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -116,5 +116,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
