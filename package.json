@@ -118,6 +118,7 @@
     ]
   },
   "devDependencies": {
+    "colors-cli": "^1.0.20",
     "gh-pages": "^2.0.1"
   }
 }
