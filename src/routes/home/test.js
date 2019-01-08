@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 
-class pageDetail extends Component {
-  componentWillMount () {
-    console.log(8888, this)
+class StopWatch extends Component {
+  state = {
+
   }
   render () {
+    const timeBoard = (props) => {
+      return <div>00:00:00</div>
+    }
+
+    const buttonArea = (props) => {
+      return (
+        <div>
+          <div>00:00:00</div>
+        </div>
+      )
+    }
+
     return 'test'
   }
 }
 
-export default pageDetail
+export default StopWatch

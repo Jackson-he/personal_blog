@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './basicLayout.scss';
 import { Route, Switch, Redirect } from "react-router-dom";
 import router from '../router';
+import Header from './header';
 
 class pageDetail extends Component {
   render () {
@@ -9,7 +10,7 @@ class pageDetail extends Component {
 
     return (
       <div style={ styles.wrapper }>
-        <div className={ styles.header }></div>
+        <Header></Header>
         <Switch>
           { RouteComponents }
           <Redirect to="/" />
